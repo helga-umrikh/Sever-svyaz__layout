@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  max-width: 1480px;
+  padding: 0 1.25em;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6875em 0;
+}
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 903px;
+}
+.header__navigation a {
+  font-family: "Inter";
+  font-style: "normal";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 150%;
+}
+.header__phone-number p {
+  font-family: "Inter";
+  font-style: "normal";
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  line-height: 150%;
+  color: #EE2523;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 27.5em;
+  padding: 2.5em 1.875em;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.12);
+}
+.card__image {
+  margin: 0 0 1.5em 0;
+  border-radius: 10px;
+}
+.card__title {
+  font-family: "Inter";
+  font-style: "normal";
+  font-weight: 600;
+  color: #000;
+}
+.card__slogan {
+  font-family: "Inter";
+  font-style: "normal";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

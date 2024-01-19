@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+
+//FONTS
+
+$Inter: 'Inter';
+$SF-pro: 'SF Pro Display';
+
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+
+$title: 50px;
+$subtitle: 30px;
+$text: 16px;
+
+
+@mixin title {
+  font-family: $Inter;
+  font-style: 'normal';
+  font-weight: 600;
+  color: $black;
+}
+
+@mixin subtitle {
+  font-family: $Inter;
+  font-style: 'normal';
+  font-size: $text;
+  font-weight: 600;
+}
+
+@mixin text {
+  font-family: $Inter;
+  font-style: 'normal';
+  font-size: $text;
+  font-weight: 400;
+}
+
+//COLORS
+
+$white: #ffffff;
+$red: #EE2523;
+$black: #000;
+$gray: rgba(0, 0, 0, 0.50);
+
+$box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.12);

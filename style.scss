@@ -1,0 +1,108 @@
+@use './variables.scss' as v;
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  max-width: 1480px;
+  padding: 0 1.25em;
+  min-height: 100%;
+	overflow: hidden;
+  margin: 0 auto;
+}
+
+
+//---------HEADER---------------------------------
+
+.header {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6875em 0;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 903px;
+  }
+
+  &__navigation a {
+    @include text;
+    color: v.$black;
+    line-height: 150%;
+  }
+
+  &__phone-number p {
+    @include subtitle;
+    text-align: right;
+    line-height: 150%;
+    color: v.$red;
+  }
+}
+
+
+
+//---------COMPONENTS-----------------------------
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 27.5em;
+  padding: 2.5em  1.875em;
+  box-shadow: v.$box-shadow;
+
+  &__image {
+    margin: 0 0 1.5em 0;
+    border-radius: 10px;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__slogan {
+    @include text;
+  }
+}
+
+
+//--------MEDIA-----------------------------------
+
+// @media screen and (max-width: 1200){
+  
+// }
