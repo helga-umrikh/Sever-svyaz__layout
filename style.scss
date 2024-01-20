@@ -103,16 +103,60 @@ h6 {
 
     &__title {
         @include title;
+        font-size: 24px;
+        margin: 0 0 12px 0;
     }
 
     &__slogan {
         @include text;
+        color: v.$gray;
+        margin: 0 0 2.9375em 0;
+        padding: 0 4em 0 0;
+    }
+
+    &__container div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__price-number {
+        margin: 0 0.13em 0 0;
+
+        font-family: v.$Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: v.$medium;
+        line-height: 50%;
+        letter-spacing: 0.5px;
+    }
+
+    &__price div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__price div p {
+        @include text;
+        line-height: 130.5%;
+    }
+
+    &__price div p:first-of-type {
+        border-bottom: 1px solid v.$black;
+    }
+
+    &__button {
+        padding: 0.8em 1.4em;
     }
 }
 
 //--------ABOUT-SECTION----------------------------
 
 .about {
+    height: 25.8125em;
+
     &__cover {
         position: absolute;
         left: 0;
@@ -152,6 +196,21 @@ h6 {
 
     &__button {
         padding: 0.8125em 6em;
+    }
+}
+
+//--------SERVICES-SECTION------------------------
+
+.services {
+    padding: 4em 0 0 0;
+    &__title {
+        @include title;
+        font-size: 1.875em;
+    }
+
+    &__cards-container {
+        width: 100%;
+        padding: 2.5em 0;
     }
 }
 
@@ -237,18 +296,17 @@ h6 {
         }
 
         &__button {
-          padding: 0.875em 3.125em;
+            padding: 0.875em 3.125em;
         }
     }
 }
 
 @media screen and (max-width: 500px) {
-
-  .header {
-    &__mobile-menu img {
-      margin: 0 4.4375em 0 0;
+    .header {
+        &__mobile-menu img {
+            margin: 0 4.4375em 0 0;
+        }
     }
-  }
 
     .about {
         height: 402px;
@@ -277,11 +335,10 @@ h6 {
     }
 }
 
-
 @media screen and (max-width: 460px) {
-  .about {
-    &__title {
-      font-size: 2em;
-  }
-  }
+    .about {
+        &__title {
+            font-size: 2em;
+        }
+    }
 }
