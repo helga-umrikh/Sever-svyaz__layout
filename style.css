@@ -71,7 +71,7 @@ h6 {
   font-weight: 600;
   text-align: right;
   line-height: 150%;
-  color: #EE2523;
+  color: #ee2523;
 }
 .header__burger-menu span {
   display: none;
@@ -79,6 +79,28 @@ h6 {
 
 .is-active {
   left: 0;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #ee2523;
+  border-radius: 8px;
+  border: 1px solid #ee2523;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  font-family: "Inter";
+  font-style: "normal";
+  font-size: 16px;
+  font-weight: 400;
+}
+.button:hover {
+  background-color: #ce1210;
+  border-color: #ce1210;
+}
+.button:active {
+  background-color: #9f0e0c;
+  border-color: #9f0e0c;
+  transform: scale(0.97);
 }
 
 .card {
@@ -105,7 +127,41 @@ h6 {
   font-weight: 400;
 }
 
-@media screen and (max-width: 1200px) {
+.about__cover {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 25.8125em;
+  background-color: #f8f8f8;
+}
+.about__img {
+  width: 804px;
+  background: linear-gradient(90deg, #f8f8f8 0%, rgba(248, 248, 248, 0.85) 16.71%, rgba(248, 248, 248, 0) 40.11%), url(./assets/img.png) lightgray 50%/cover no-repeat;
+}
+.about__content {
+  position: absolute;
+  padding: 4em 0;
+  z-index: 3;
+}
+.about__title {
+  font-family: "Inter";
+  font-style: "normal";
+  font-weight: 600;
+  color: #000;
+  max-width: 15em;
+  margin: 0 0 0.8em 0;
+  font-size: 50px;
+  line-height: 130%;
+}
+.about__button {
+  padding: 0.8125em 6em;
+}
+
+@media screen and (max-width: 1439px) {
   .header__navigation {
     position: fixed;
     top: 0;
@@ -139,10 +195,59 @@ h6 {
     width: 1.5em;
     height: 3px;
     margin: 5px 0;
-    background-color: #EE2523;
+    background-color: #ee2523;
   }
   .is-active {
     left: 0;
+  }
+}
+@media screen and (max-width: 968px) {
+  .wrapper {
+    padding: 0 2.5em;
+  }
+  .about {
+    height: 25em;
+  }
+  .about__cover {
+    height: inherit;
+  }
+  .about__title {
+    font-size: 40px;
+  }
+  .about__img {
+    background: linear-gradient(90deg, #f8f8f8 11.85%, rgba(248, 248, 248, 0.85) 35.72%, rgba(248, 248, 248, 0) 55.51%), url(./assets/img.png);
+    background-position: 279.263px -1.219px;
+    background-size: 103.803% 133.141%, cover;
+    background-repeat: no-repeat;
+  }
+  .about__button {
+    padding: 0.875em 3.125em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header__mobile-menu img {
+    margin: 0 4.4375em 0 0;
+  }
+  .about {
+    height: 402px;
+  }
+  .about__cover {
+    height: inherit;
+  }
+  .about__title {
+    max-width: 80%;
+    font-size: 38px;
+  }
+  .about__img {
+    background: linear-gradient(90deg, #f8f8f8 16.3%, rgba(247, 248, 248, 0.85) 30.04%, rgba(248, 248, 248, 0) 52.49%), url(./assets/img.png);
+    background-position: 61.056px -60.437px;
+    background-size: 177.833% 127.141%;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 460px) {
+  .about__title {
+    font-size: 2em;
   }
 }
 

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
-
 //FONTS
 
 $Inter: 'Inter';
@@ -16,33 +15,53 @@ $title: 50px;
 $subtitle: 30px;
 $text: 16px;
 
-
 @mixin title {
-  font-family: $Inter;
-  font-style: 'normal';
-  font-weight: 600;
-  color: $black;
+    font-family: $Inter;
+    font-style: 'normal';
+    font-weight: 600;
+    color: $black;
 }
 
 @mixin subtitle {
-  font-family: $Inter;
-  font-style: 'normal';
-  font-size: $text;
-  font-weight: 600;
+    font-family: $Inter;
+    font-style: 'normal';
+    font-size: $text;
+    font-weight: 600;
 }
 
 @mixin text {
-  font-family: $Inter;
-  font-style: 'normal';
-  font-size: $text;
-  font-weight: 400;
+    font-family: $Inter;
+    font-style: 'normal';
+    font-size: $text;
+    font-weight: 400;
+}
+
+@mixin button {
+    color: $white;
+    background-color: $red;
+    border-radius: 8px;
+    border: 1px solid $red;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: darken($red, 10%);
+      border-color: darken($red, 10%);
+    }
+
+    &:active {
+      background-color: darken($red, 20%);
+      border-color: darken($red, 20%);
+      transform: scale(0.97);
+    }
 }
 
 //COLORS
 
 $white: #ffffff;
-$red: #EE2523;
+$white_smoke: #f8f8f8;
+$red: #ee2523;
 $black: #000;
-$gray: rgba(0, 0, 0, 0.50);
+$gray: rgba(0, 0, 0, 0.5);
 
 $box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.12);
