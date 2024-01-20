@@ -129,7 +129,7 @@ h6 {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5019607843);
   margin: 0 0 2.9375em 0;
-  padding: 0 4em 0 0;
+  height: 4.875em;
 }
 .card__container div {
   display: flex;
@@ -212,6 +212,9 @@ h6 {
   font-size: 1.875em;
 }
 .services__cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
   width: 100%;
   padding: 2.5em 0;
 }
