@@ -218,6 +218,33 @@ h6 {
   width: 100%;
   padding: 2.5em 0;
 }
+.services__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.static-button {
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px 0px 0px 8px !important;
+  padding: 2em 1.5em;
+}
+.static-button__title {
+  font-family: "Inter";
+  font-style: "normal";
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0 1.25em 0 0;
+}
+
+.example {
+  width: 100%;
+  height: 1000px;
+}
 
 @media screen and (max-width: 1439px) {
   .header__navigation {
