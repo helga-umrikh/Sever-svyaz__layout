@@ -118,6 +118,7 @@ h6 {
     width: 27.5em;
     padding: 2.5em 1.875em;
     box-shadow: v.$box-shadow;
+    transition: transform 0.3s;
 
     &__image {
         margin: 0 0 1.5em 0;
@@ -172,6 +173,10 @@ h6 {
     &__button {
         padding: 0.8em 1.4em;
     }
+}
+
+.card:hover {
+    transform: scale(0.98);
 }
 
 //--------ABOUT-SECTION----------------------------
@@ -393,7 +398,7 @@ h6 {
 
     .card {
         width: 24.375em;
-        
+
         &__image {
             width: 100%;
         }
