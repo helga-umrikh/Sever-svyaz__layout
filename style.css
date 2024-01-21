@@ -328,6 +328,10 @@ h6 {
   .about__button {
     padding: 0.875em 3.125em;
   }
+  .static-button {
+    top: 473px;
+    padding: 1em 1.5em;
+  }
 }
 @media screen and (max-width: 500px) {
   .header__mobile-menu img {
@@ -348,6 +352,12 @@ h6 {
     background-position: 61.056px -60.437px;
     background-size: 177.833% 127.141%;
     background-repeat: no-repeat;
+  }
+  .card {
+    width: 24.375em;
+  }
+  .card__image {
+    width: 100%;
   }
 }
 @media screen and (max-width: 460px) {

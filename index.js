@@ -81,3 +81,17 @@ function renderCards(data) {
 document.addEventListener('DOMContentLoaded', function () {
     renderCards(data)
 })
+
+
+const staticButtonTitle = document.querySelector('.static-button__title');
+
+function changeText() {
+    if (window.innerWidth < 501) {
+        staticButtonTitle.textContent = 'Оплатить';
+    } else {
+        staticButtonTitle.textContent = 'Оплатить услуги';
+    }
+}
+
+window.onload = changeText;
+window.onresize = changeText;
