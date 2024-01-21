@@ -56,7 +56,8 @@ h6 {
   justify-content: space-between;
   width: 903px;
 }
-.header__navigation a {
+.header__navigation a,
+.header ul li {
   font-family: "Inter";
   font-style: "normal";
   font-size: 16px;
@@ -75,6 +76,25 @@ h6 {
 }
 .header__burger-menu span {
   display: none;
+}
+.header__dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  background-color: #ffffff;
+  width: 225px;
+}
+.header__dropdown li {
+  display: block;
+  padding: 1em 1em 0.625em 1em;
+  border-top: 1px solid #E7E7E7;
+}
+.header__dropdown li:hover {
+  background-color: rgb(222, 222, 222);
+}
+
+.navigation__item:hover .header__dropdown {
+  display: block;
 }
 
 .is-active {

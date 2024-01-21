@@ -60,7 +60,8 @@ h6 {
         width: 903px;
     }
 
-    &__navigation a {
+    &__navigation a,
+    ul li {
         @include text;
         color: v.$black;
         line-height: 150%;
@@ -76,6 +77,28 @@ h6 {
     &__burger-menu span {
         display: none;
     }
+
+    &__dropdown {
+        position: absolute;
+        z-index: 999;
+        display: none;
+        background-color: v.$white;
+        width: 225px;
+    }
+
+    &__dropdown li {
+        display: block;
+        padding: 1em 1em 0.625em 1em;
+        border-top: 1px solid v.$smoke_gray;
+    }
+
+    &__dropdown li:hover {
+        background-color: rgb(222, 222, 222);
+    }
+}
+
+.navigation__item:hover .header__dropdown {
+    display: block;
 }
 
 .is-active {
