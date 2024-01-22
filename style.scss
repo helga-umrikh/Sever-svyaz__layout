@@ -95,6 +95,10 @@ h6 {
     &__dropdown li:hover {
         background-color: rgb(222, 222, 222);
     }
+
+    &__mobile-menu {
+        display: none;
+    }
 }
 
 .navigation__item:hover .header__dropdown {
