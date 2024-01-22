@@ -242,7 +242,7 @@ h6 {
 .services__cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 3em;
   width: 100%;
   padding: 2.5em 0;
 }
